@@ -2,8 +2,8 @@
 include_once __DIR__.'/bppg_helper.php';
 
 // Define environment variable
-define('PG_REQUEST_URL', 'http://uat.bhartipay.com/crm/jsp/paymentrequest');
-define('PG_RESPONSE_URL', 'http://uat.bhartipay.com/crm/jsp/response.jsp');
+define('PG_REQUEST_URL', 'http://uat.subpe.com/crm/jsp/paymentrequest');
+define('PG_RESPONSE_URL', 'http://uat.subpe.com/crm/jsp/response.jsp');
 define('PG_RESPONSE_MODE', 'SALE');
 define('PG_SALT', '0000000000000000');
 define('PG_PAY_ID', '0000000000000000');
@@ -38,7 +38,7 @@ $pg_transaction->setOrderId($_REQUEST['ORDER_ID']);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Bhartipay Demo Merchant Checkout Page</title>
+    <title>Subpe Demo Merchant Checkout Page</title>
     <style type="text/css" media="screen">
         body{width:100%;margin:0 auto;background-color:#e4eff5}
         .new{width:500px;margin:20px auto 0;padding:0;font:normal 12px arial;color:#555;background:#fff;border:1px solid #d0d0d0;border-radius:5px;-webkit-box-shadow:-1px 3px 8px -1px rgba(0,0,0,0.75);-moz-box-shadow:-1px 3px 8px -1px rgba(0,0,0,0.75);box-shadow:-1px 3px 8px -1px rgba(0,0,0,0.75)}
@@ -87,7 +87,7 @@ if (isset($_REQUEST['payment_check'])) {
                 <tr>
                     <td width="28%" align="right" valign="middle" class="labelfont">MERCHANT NAME: </td>
                     <td width="65%" align="left" valign="middle">
-                        <input type="text" name="MERCHANTNAME" class="signuptextfield" value="Bhartipay Demo" autocomplete="off"/>
+                        <input type="text" name="MERCHANTNAME" class="signuptextfield" value="Subpe Demo" autocomplete="off"/>
                     </td>
                     <td width="7%" align="left" valign="middle">&nbsp;</td>
                 </tr>
@@ -115,7 +115,7 @@ if (isset($_REQUEST['payment_check'])) {
                 <tr>
                     <td width="28%" align="right" valign="middle" class="labelfont">CUSTOMER NAME: </td>
                     <td width="65%" align="left" valign="middle">
-                        <input type="text" name="CUST_NAME" class="signuptextfield" value="BHARTIPAY DEMO" autocomplete="off"/>
+                        <input type="text" name="CUST_NAME" class="signuptextfield" value="SUBPE DEMO" autocomplete="off"/>
                     </td>
                     <td width="7%" align="left" valign="middle">&nbsp;</td>
                 </tr>                   
@@ -143,7 +143,7 @@ if (isset($_REQUEST['payment_check'])) {
                 <tr>
                     <td width="28%" align="right" valign="middle" class="labelfont">CUSTOMER EMAILID: </td>
                     <td width="65%" align="left" valign="middle">
-                        <input type="text" name="CUST_EMAIL" class="signuptextfield" value="neeraj.kumar@bhartipay.com" autocomplete="off"/>
+                        <input type="text" name="CUST_EMAIL" class="signuptextfield" value="neeraj.kumar@subpe.com" autocomplete="off"/>
                     </td>
                     <td width="7%" align="left" valign="middle">&nbsp;</td>
                 </tr>
